@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/all.min.css">
+
+    <title>Digital Agency</title>
+  </head>
+  <body class="bg-darkBlue text-white font-inter">
+    <section id="stars">
+      <div class="left-corner-shadow"></div>
+      <div class="left-corner-box"></div>
+      <div class="star-bg"></div>
+      <div class="star star-1"></div>
+    </section>
+
+    <header id="header" class="relative z-40 sm:p-6">
+      <nav class="relative container mx-auto px-[9.375rem] py-[1.875rem] sm:px-0 sm:py-0">
+        <div class="flex items-center justify-between">
+          <div class="">
+            <img src="./static/img/logo.svg" alt="Digital Agency" />
+          </div>
+
+          <div
+            class="lg:flex sm:hidden space-x-14 font-medium text-lg leading-[1.375rem]"
+          >
+            <a href="#" class="hover:text-yellow">About us</a>
+            <a href="#" class="hover:text-yellow">What We do</a>
+            <a href="#" class="hover:text-yellow">Our work</a>
+            <a href="#" class="hover:text-yellow">Blog</a>
+            <a href="#" class="hover:text-yellow">Say hi</a>
+          </div>
+
+          <button id="menu-btn" class="block hamburger focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden z-[9999] self-baseline text-darkBlue py-8 mt-10 space-y-6 font-bold rounded-md bg-white left-6 right-6 sm:left-0 sm:right-0 drop-shadow-lg"
+          >
+            <a href="#" class="hover:text-yellow">About us</a>
+            <a href="#" class="hover:text-yellow">What We do</a>
+            <a href="#" class="hover:text-yellow">Our work</a>
+            <a href="#" class="hover:text-yellow">Blog</a>
+            <a href="#" class="hover:text-yellow">Say hi</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="hero"
+      class="container mx-auto my-16 relative z-30 hero-height sm:my-10 sm:h-[150vh]"
+    >
+      <div>
+        <div class="left-64 absolute sm:left-0">
+          <img src="./static/img/world-class.png" class="w-56 sm:w-40" />
+        </div>
+        <div class="absolute left-[498px] sm:left-36">
+          <h1 class="text-[9.375rem] font-bold leading-[11.375rem] sm:text-7xl sm:leading-[5rem]">Digital</h1>
+          <h1
+            class="text-[9.375rem] font-bold leading-[11.375rem] -ml-36 -mt-10  sm:text-7xl sm:leading-[5rem] sm:-ml-9 sm:-mt-1"
+          >
+            Agency
+          </h1>
+        </div>
+        <div class="absolute right-[70px] bottom-14 sm:right-0 sm:bottom-0 sm:top-96 sm:px-5">
+          <img src="./static/img/hero-1.png" />
+        </div>
+      </div>
+
+      <div class="m-auto w-[33rem] mt-10 absolute top-80 left-[350px] sm:left-5 sm:top-32 sm:w-11/12">
+        <p class="text-2xl leading-[2.5rem] text-[#E0E5F3] font-normal sm:text-lg">
+          Full-service design support that growing B2B companies need. World
+          leading agency.
+        </p>
+        <a
+          href="#"
+          class="btn mt-10 rounded-4xl text-darkBlue bg-yellow w-46 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-white"
+          >Our Projects</a
+        >
+      </div>
+
+      <div class="star star-2"></div>
+      <div class="star star-3"></div>
+
+      <div class="absolute bottom-0 left-0 sm:pl-5">
+        <img src="./static/img/hero-2.png" />
+      </div>
+
+      <div class="absolute left-2/4 bottom-28 scroll-pl-6 sm:hidden">
+        <img src="./static/img/scroll-down.png" />
+      </div>
+    </section>
+
+    <section id="about" class="container mx-auto flex justify-between sm:block sm:px-6">
+      <div class="w-1/3 ml-[9.375rem] sm:w-full sm:ml-0">
+        <h2 class="text-5xl leading-[3.625rem] font-bold capitalize mb-7 sm:text-2xl sm:leading-8">
+          We are a creative <br />digital agency
+        </h2>
+        <p class="text-lightGray font-normal text-lg leading-8 mb-7 sm:text-base sm:leading-7">
+          Dalio started with a vision for building an agency to solve the
+          business problems of the future, and that requires a different model.
+          We’re not a branding agency that dabbles in tech, and we’re not a
+          development shop that leaves you hanging when it’s time to go to
+          market.
+        </p>
+        <p class="text-lightGray font-normal text-lg leading-8 sm:text-base sm:leading-7">
+          We start with human experience and layer in technology and marketing
+          to deliver truly integrated digital solutions. This unique set of
+          capabilities sets us apart from other agencies and positions DIG to
+          help you attack your goals.
+        </p>
+
+        <a
+          href="#"
+          class="btn mt-10 rounded-4xl text-darkBlue bg-yellow w-42 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-white" 
+          >Contact Us</a
+        >
+      </div>
+      <div class="mr-20 sm:mr-0 sm:mt-10">
+        <img src="./static/img/about.png" />
+      </div>
+    </section>
+
+    <section id="counter" class="mb-32 mt-24">
+      <div class="container mx-auto flex justify-around w-4/6 sm:block sm:w-full">
+        <div class="text-center sm:mb-16">
+          <h3 class="text-5xl font-bold leading-[3rem] pb-2">4.8k</h3>
+          <p class="text-lightGray font-normal text-xl leading-6">
+            Job Completed
+          </p>
+        </div>
+        <div class="text-center sm:mb-16">
+          <h3 class="text-5xl font-bold leading-[3rem] pb-2">12+</h3>
+          <p class="text-lightGray font-normal text-xl leading-6">
+            Industry Experience
+          </p>
+        </div>
+        <div class="text-center sm:mb-16">
+          <h3 class="text-5xl font-bold leading-[3rem] pb-2">2.5+</h3>
+          <p class="text-lightGray font-normal text-xl leading-6">
+            World wide clients
+          </p>
+        </div>
+        <div class="text-center sm:mb-16">
+          <h3 class="text-5xl font-bold leading-[3rem] pb-2">120+</h3>
+          <p class="text-lightGray font-normal text-xl leading-6">Won Awards</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="my-38 overflow-hidden sm:my-16">
+      <div class="container m-auto flex pl-38 pr-38 justify-between mb-10 sm:pl-5 sm:pr-5">
+        <h3 class="capitalize text-5xl leading-10[3.625rem] font-bold sm:text-2xl sm:leading-8">
+          Service we can<br />
+          help you
+        </h3>
+        <a
+          href="#"
+          class=" rounded-4xl  text-yellow h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-darkGray sm:text-base"
+          >See All</a
+        >
+      </div>
+
+      <div class="container m-auto overflow-hidden">
+        <div class="w-1/2 float-left pl-38 sm:w-full sm:float-none sm:p-5 sm:pt-0">
+          <div class="bg-darkGray mr-4 mb-8 rounded-tl-50 px-9 py-20 sm:rounded-4xl sm:mr-0">
+            <img
+              src="./static/img/icons/content-writing.png"
+              alt="Content Writing"
+              width="53"
+            />
+            <h3 class="text-lightGray text-3xl font-semibold py-6">
+              Content Writing
+            </h3>
+            <p
+              class="text-lightGray text-base leading-[1.875rem] pb-6 font-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+              consequat nunc id purus pretium sagittis. Nulla ridiculus nullam
+              bibendum luctus viverra. Eu pellentesque sem sed platea diam
+              dignissim duis purus.
+            </p>
+            <a
+              href="#"
+              class="btn-w btn-w-hover mt-2 rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+              >Read More</a
+            >
+          </div>
+          <div class="bg-darkGray mr-4 rounded-bl-50 px-9 py-20 sm:rounded-4xl sm:mr-0">
+            <img
+              src="./static/img/icons/brading.png"
+              alt="Branding"
+              width="53"
+            />
+            <h3 class="text-lightGray text-3xl font-semibold py-6">Branding</h3>
+            <p
+              class="text-lightGray text-base leading-[1.875rem] pb-6 font-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+              consequat nunc id purus pretium sagittis diam quis massa. Nulla
+              ridiculus nullam bibendum luctus viverra. Eu pellentesque sem sed
+              platea diam dignissim duis purus.
+            </p>
+            <a
+              href="#"
+              class="btn-w btn-w-hover mt-2 rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="w-1/2 float-left pr-38 mt-10 sm:w-full sm:float-none sm:p-5 sm:pt-0 sm:mt-4">
+          <div class="bg-darkGray ml-4 mb-8 rounded-tr-50 px-9 py-20 sm:rounded-4xl sm:ml-0">
+            <img
+              src="./static/img/icons/ux-research.png"
+              alt="UX Research"
+              width="53"
+            />
+            <h3 class="text-lightGray text-3xl font-semibold py-6">
+              UX Research
+            </h3>
+            <p
+              class="text-lightGray text-base leading-[1.875rem] pb-6 font-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+              consequat nunc id purus pretium sagittis diam quis massa. Nulla
+              ridiculus nullam bibendum luctus viverra. Eu pellentesque sem sed
+              platea diam dignissim duis purus.
+            </p>
+            <a
+              href="#"
+              class="btn-w btn-w-hover mt-2 rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+              >Read More</a
+            >
+          </div>
+          <div class="bg-darkGray ml-4 rounded-br-50 px-9 py-20  sm:rounded-4xl sm:ml-0">
+            <img
+              src="./static/img/icons/web-design.png"
+              alt="Web Design"
+              width="53"
+            />
+            <h3 class="text-lightGray text-3xl font-semibold py-6">
+              Web Design
+            </h3>
+            <p
+              class="text-lightGray text-base leading-[1.875rem] pb-6 font-normal"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+              consequat nunc id purus pretium sagittis diam quis massa. Nulla
+              ridiculus nullam bibendum luctus viverra. Pellentesque sem sed
+              platea diam dignissim duis purus.
+            </p>
+            <a
+              href="#"
+              class="btn-w btn-w-hover mt-2 rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="mb-38 sm:mb-28">
+      <div class="container m-auto px-38 sm:px-5">
+        <h3
+          class="capitalize text-5xl leading-[3.625rem] text-white font-bold text-center pb-6 sm:text-left sm:text-2xl sm:leading-8"
+        >
+          Our latest Projects
+        </h3>
+
+        <div class="button-group filters-button-group text-center mb-12 sm:text-left sm:mb-6">
+          <button
+            class="button is-checked font-medium text-base leading-[3.625rem] hover:text-yellow px-5 sm:px-1 sm:text-sm"
+            data-filter="*"
+          >
+            All
+          </button>
+          <button
+            class="button font-medium text-base leading-[3.625rem] hover:text-yellow px-5 sm:px-1 sm:text-sm"
+            data-filter=".ui-ux"
+          >
+            UI/UX
+          </button>
+          <button
+            class="button font-medium text-base leading-[3.625rem] hover:text-yellow px-5 sm:px-1 sm:text-sm"
+            data-filter=".web-design"
+          >
+            Web Design
+          </button>
+          <button
+            class="button font-medium text-base leading-[3.625rem] hover:text-yellow px-5 sm:px-1 sm:text-sm"
+            data-filter=".branding"
+          >
+            Branding
+          </button>
+          <button
+            class="button font-medium text-base leading-[3.625rem] hover:text-yellow px-5 sm:px-1 sm:text-sm"
+            data-filter=".interaction"
+          >
+            Interaction
+          </button>
+        </div>
+
+        <div class="grid sm:h-28">
+          <div class="element-item transition ui-ux">
+            <a href="#">
+              <img src="./static/img/project-1.png" alt="" />
+            </a>
+            <div class="w-11/12 sm:hidden">
+              <h4 class="py-8 font-bold text-2xl leading-9">
+                Talent.com - Logo, Full Redesign and Branding
+              </h4>
+              <p
+                class="text-lightGray font-normal text-base leading-[1.875rem]"
+              >
+                Talent.com a new brand identity using their core values of
+                optimism, transparency and approachability as inspiration. As a
+                result, we were able to create the most streamlined
+              </p>
+            </div>
+          </div>
+          <div class="element-item metalloid web-design">
+            <a href="#">
+              <img src="./static/img/project-2.png" alt="" />
+            </a>
+            <div class="w-11/12 sm:hidden">
+              <h4 class="py-8 font-bold text-2xl leading-9">
+                Bonfire - Landing Page Design Webby Awards Nomination
+              </h4>
+              <p
+                class="text-lightGray font-normal text-base leading-[1.875rem]"
+              >
+                Pretty excited to announce that we just got nominated at the
+                Webby Awards! easy to understand and to use should be essential
+                for every business owner who uses their website.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="#"
+            class="btn m-auto mt-10 rounded-4xl text-darkBlue bg-yellow w-46 h-15 block leading-[3.75rem] pl-2 font-medium hover:bg-white"
+            >Load More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="mb-38 sm:mb-28">
+      <div class="container m-auto px-38 sm:p-5">
+        <h3 class="text-5xl leading-[3.625rem] text-white font-bold pb-12 sm:text-2xl sm:leading-8">
+          What say happy clients
+        </h3>
+        <div class="clients">
+          <!-- Client -->
+          <div class="bg-darkGray rounded-50 px-16 py-14 sm:px-8">
+            <img src="./static/img/client.png" alt="" class="opacity-30" />
+            <p
+              class="py-8 font-normal text-base leading-[1.875rem] text-lightGray"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              semper consequat in dolor mattis pellentesque suspendisse
+              vulputate nec. Scelerisque elementum, consequat pharetra lectus
+              eget vivamus ut. Magna aliquam tellus at volutpat cras aliquet
+              facilisi quis adipiscing. Proin egestas et pellentesque augue
+              pretium, amet. Natoque blandit augue integer maecenas mattis amet,
+              nec.
+            </p>
+
+            <div class="flex justify-between sm:block">
+              <div class="flex justify-items-center">
+                <div class="mr-4">
+                  <img src="./static/img/personal.png" />
+                </div>
+                <div>
+                  <p class="text-white text-lg pb-1">Brooklyn Simmons</p>
+                  <span class="text-yellow">Pendron.Inc, Ceo</span>
+                </div>
+              </div>
+              <div class="sm:text-center">
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Client -->
+          <div class="bg-darkGray rounded-50 px-16 py-14 sm:px-8">
+            <img src="./static/img/client.png" alt="" class="opacity-30" />
+            <p
+              class="py-8 font-normal text-base leading-[1.875rem] text-lightGray"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              semper consequat in dolor mattis pellentesque suspendisse
+              vulputate nec. Scelerisque elementum, consequat pharetra lectus
+              eget vivamus ut. Magna aliquam tellus at volutpat cras aliquet
+              facilisi quis adipiscing. Proin egestas et pellentesque augue
+              pretium, amet. Natoque blandit augue integer maecenas mattis amet,
+              nec.
+            </p>
+
+            <div class="flex justify-between sm:block">
+              <div class="flex justify-items-center">
+                <div class="mr-4">
+                  <img src="./static/img/personal.png" />
+                </div>
+                <div>
+                  <p class="text-white text-lg pb-1">Brooklyn Simmons</p>
+                  <span class="text-yellow">Pendron.Inc, Ceo</span>
+                </div>
+              </div>
+              <div class="sm:text-center">
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Client -->
+          <div class="bg-darkGray rounded-50 px-16 py-14 sm:px-8">
+            <img src="./static/img/client.png" alt="" class="opacity-30" />
+            <p
+              class="py-8 font-normal text-base leading-[1.875rem] text-lightGray"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+              semper consequat in dolor mattis pellentesque suspendisse
+              vulputate nec. Scelerisque elementum, consequat pharetra lectus
+              eget vivamus ut. Magna aliquam tellus at volutpat cras aliquet
+              facilisi quis adipiscing. Proin egestas et pellentesque augue
+              pretium, amet. Natoque blandit augue integer maecenas mattis amet,
+              nec.
+            </p>
+
+            <div class="flex justify-between sm:block">
+              <div class="flex justify-items-center">
+                <div class="mr-4">
+                  <img src="./static/img/personal.png" />
+                </div>
+                <div>
+                  <p class="text-white text-lg pb-1">Brooklyn Simmons</p>
+                  <span class="text-yellow">Pendron.Inc, Ceo</span>
+                </div>
+              </div>
+              <div class="sm:text-center">
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+                <img src="./static/img/small-star.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="mb-38 sm:mb-24">
+      <div class="container m-auto px-38 sm:px-5">
+        <h3 class="text-5xl leading-[3.625rem] text-white font-bold pb-12 sm:text-2xl sm:leading-8 sm:pb-6">
+          Blog From Insights
+        </h3>
+        <div class="flex justify-between sm:block">
+          <div class="w-11/12 sm:w-full sm:mb-10">
+            <img src="./static/img/blog-1.png" alt="" />
+            <div class="mt-8 w-11/12">
+              <h5
+                class="text-[#0C1430] bg-white inline-block rounded-xl py-2 px-4 text-xs font-medium leading-[1.125rem] mb-4"
+              >
+                TECHNOLOGY
+              </h5>
+              <h6 class="font-medium text-base mb-4">John Doe • 19 Jan 2022</h6>
+              <p class="font-bold text-3xl mb-5 sm:text-xl">
+                A small business is only as good as its tools and it is totally
+                true.
+              </p>
+              <a
+                href="#"
+                class="btn-w btn-w-hover rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="w-11/12 sm:w-full">
+            <img src="./static/img/blog-2.png" alt="" />
+            <div class="mt-8 w-11/12">
+              <h5
+                class="text-[#0C1430] bg-white inline-block rounded-xl py-2 px-4 text-xs font-medium leading-[1.125rem] mb-4"
+              >
+                WEBINER
+              </h5>
+              <h6 class="font-medium text-base mb-4">John Doe • 19 Jan 2022</h6>
+              <p class="font-bold text-3xl mb-5 sm:text-xl">
+                Colaboration with team members that will be grow to business.
+              </p>
+              <a
+                href="#"
+                class="btn-w btn-w-hover rounded-4xl border border-white text-white w-40 h-15 block leading-[3.75rem] pl-8 font-medium hover:bg-yellow hover:text-darkBlue"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="mb-38">
+      <div class="container m-auto px-38 sm:px-5">
+        <h3 class="text-5xl leading-[3.625rem] text-white font-bold pb-12 sm:text-2xl sm:leading-8 sm:pb-6">
+          Categories
+        </h3>
+        <div class="categories-1 mb-24 sm:mb-48!important">
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+        </div>
+
+        <div class="categories-2 sm:hidden">
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-1.png" />
+            <p class="text-2xl font-bold py-12">Games</p>
+          </div>
+
+          <div class="bg-darkGray text-center rounded-50 p-2">
+            <img src="./static/img/cat-2.png" />
+            <p class="text-2xl font-bold py-12">Sports</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="w-full bg-darkGray">
+      <div class="container m-auto px-20 py-12 sm:px-5">
+        <div class="flex justify-between items-center mb-12 sm:block">
+          <div class="footer-yellow relative w-1/2 bg-yellow rounded-4xl px-12 py-20 text-darkBlue sm:w-full sm:mb-10">
+            <p class="font-semibold text-xl pb-3">Sign Up to Receive Product Updates and More</p>
+            <input placeholder="youremail@email.com" class="placeholder-[#0A142F] bg-yellow border-b block w-full outline-none font-normal text-base leading-4 py-1 text-[#0A142F]" type="text" name="" id="">
+          </div>
+          <div class="flex justify-evenly sm:block sm:text-center">
+            <div class="w-1/3 sm:m-auto sm:w-1/2 sm:mb-10">
+              <h6 class="font-semibold text-lg leading-4 pb-4">Office</h6>
+              <p class="font-normal text-base leading-8">545, Street 11, Block F
+                California, U.S.A</p>
+            </div>
+            <div class="w-1/3 sm:m-auto sm:w-1/2">
+              <h6 class="font-semibold text-lg leading-4 pb-4">Contact</h6>
+              <a class="font-normal text-base leading-8" href="tel:+905387705001">+90 (538) 770 5001</a>
+              <a class="font-normal text-base leading-8" href="mailto:alievdi@gmail.com">alievdi@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between sm:block sm:text-center">
+          <div class="sm:pb-10">
+            <p class="text-lightGray text-base leading-5 font-normal">2022. All Rights Reserved</p>
+          </div>
+          <div class="sm:pb-10">
+            <a href="#" class="text-lightGray text-base font-normal pr-3 hover:text-yellow">Terms & Conditions</a>
+            <a href="#" class="text-lightGray text-base font-normal pr-3 hover:text-yellow">Privacy</a>
+          </div>
+          <div>
+            <a href="#" target="_blank" class="hover:text-yellow text-xl ml-3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank" class="hover:text-yellow text-xl ml-3"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank" class="hover:text-yellow text-xl ml-3"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#" target="_blank" class="hover:text-yellow text-xl ml-3"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script
+      type="text/javascript"
+      src="./static/js/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./static/js/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./static/js/slick.js"></script>
+    <script type="text/javascript" src="./static/js/isotope.pkgd.js"></script>
+    <script type="text/javascript" src="./static/js/isotope.js"></script>
+    <script type="text/javascript" src="./static/js/app.js"></script>
+  </body>
+</html>

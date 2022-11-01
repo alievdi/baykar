@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div id="preload-container">
+    <div class="preload"></div>
+  </div>
+
+
+    <h1 class="app-title">Countries App</h1>
+
+    <input type="text" class="search-box" name="searchCountry" placeholder="Search" id="search" onkeyup="searchCountry()">
+
+    <select name="selectRegion" id="selectRegion" class="select-box" onchange="selectRegion()">          
+          <option value="all">All Country</option>
+          <option value="europe">Europe</option>
+          <option value="africa">Africa</option>
+          <option value="americas">America</option>
+          <option value="asia">Asia</option>
+          <option value="oceania">Oceania</option>
+      </select>
+    
+    <div id="container">
+    </div>
+
+
+    <div class="modal fade" id="countryDetails" tabindex="-1" aria-labelledby="countryDetailsLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="countryDetailsLabel">Country Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-preload"></div>
+            <div id="country-details">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script src="static/js/countries.js"></script>
+    <script src="static/js/ui.js"></script>
+    <script src="static/js/app.js"></script>
+
+</body>
+</html>
