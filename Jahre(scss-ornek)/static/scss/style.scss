@@ -1,0 +1,16 @@
+// Sections
+@use 'custom';
+@use 'sections/header';
+@use 'sections/slider';
+@use 'sections/about';
+@use 'sections/counter';
+@use 'sections/social';
+@use 'sections/maps';
+@use 'sections/comments';
+@use 'sections/footer.scss';
+// İnner Page
+@use 'sections/banner';
+@use 'sections/content';
+@use 'sections/timeline';
+@use 'sections/otherblog';
+@use 'sections/blog';

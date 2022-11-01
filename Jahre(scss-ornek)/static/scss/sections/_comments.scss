@@ -1,0 +1,158 @@
+@use '../components/variable' as *;
+.comment-content {
+    background: #4d4d4d;
+    padding: 50px 0 75px 0;
+    position: relative;
+    .container {
+        position: relative;
+    }
+    h2 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0 0 30px 0;
+        font-weight: 400;
+        @include media('xsmall') {
+            font-size: 18px;
+        }
+        @include media('small') {
+            font-size: 18px;
+        }
+    }
+    .carousel {
+        position: relative;
+        width: 100%;
+        @include media('xsmall') {
+            width: 90%;
+            margin: 0 auto 0;
+        }
+        @include media('small') {
+            width: 90%;
+            margin: 0 auto 0;
+        }
+        @include media('medium') {
+            width: 90%;
+        }
+    }
+    .slides {
+        overflow: hidden;
+        position: relative;
+        width: 100%!important;
+        ul {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            li {
+                width: 100%;
+                float: left;
+                position: relative;
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+    }
+    #buttons {
+        a {
+            img {
+                width: 15px;
+            }
+            &:hover img {
+                opacity: 0.3;
+            }
+        }
+        a#prev {
+            position: absolute;
+            top: 50%;
+            box-sizing: border-box;
+            color: #000;
+            text-decoration: none;
+            appearance: none;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+        }
+        a#next {
+            position: absolute;
+            top: 50%;
+            box-sizing: border-box;
+            color: #000;
+            text-decoration: none;
+            appearance: none;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+            right: 0;
+            @include media('xsmall') {
+                right: 10px;
+            }
+            @include media('small') {
+                right: 10px;
+            }
+        }
+    }
+    .quote-phrase {
+        color: #fff;
+        font-size: 30px;
+        font-style: italic;
+        padding: 2rem 0 1rem 4rem;
+        line-height: 1.5;
+        margin: 0 2px;
+        &::after {
+            content: "";
+            background: url('../img/icons-quote.svg') no-repeat;
+            background-size: contain;
+            width: 52px;
+            height: 35px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+        @include media('xsmall') {
+            font-size: 18px;
+            padding: 1rem 2rem 1rem 3rem;
+            &::after {
+                width: 40px;
+            }
+        }
+        @include media('small') {
+            font-size: 18px;
+            padding: 1rem 2rem 1rem 3rem;
+            &::after {
+                width: 40px;
+            }
+        }
+        @include media('medium') {
+            font-size: 22px;
+        }
+    }
+    .quote-author {
+        color: #fff;
+        font-size: 14px;
+        text-align: right;
+        @include media('xsmall') {
+            font-size: 12px;
+        }
+        @include media('small') {
+            font-size: 12px;
+        }
+        @include media('medium') {
+            font-size: 14px;
+        }
+    }
+    .authorContainer {
+        font-size: 16px;
+        @include media('xsmall') {
+            width: 90%;
+        }
+        @include media('small') {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// Fonts
+$FontFamilyRegular: brandon-grotesque,
+sans-serif;
+$FontFamilyBold: brandon-grotesque,
+sans-serif;
+// Mobile Options
+$breakpoints: ( 'xsmall': '(max-width: 319px)', 'small': '( min-width: 320px) and ( max-width: 767px)', 'medium': '(min-width: 768px) and ( max-width: 991px)', 'large': '(min-width:992px) and ( max-width: 1200px)');
+@mixin media($name) {
+    @if map-has-key($breakpoints, $name) {
+        $value: map-get($breakpoints, $name);
+        $query: if(type-of($value)=="string", $value, inspect($value));
+        @media #{$query} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Please make sure it is defined in `$breakpoints` map.";
+    }
+}

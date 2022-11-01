@@ -1,0 +1,36 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com
+*/
+
+// @font-face {
+//     font-family: "Brandon Grotesque W01 Regular";
+//     src: url("Fonts/5579733/25ff2d9b-b7a9-487d-bb65-2f9ad17664f0.eot?#iefix");
+//     src: url("Fonts/5579733/25ff2d9b-b7a9-487d-bb65-2f9ad17664f0.eot?#iefix") format("eot"), url("Fonts/5579733/050663eb-e1cb-4e20-83bc-b6fbb0650136.woff2") format("woff2"), url("Fonts/5579733/3c904513-944e-4a14-9492-e7bd0f1d77c0.woff") format("woff"), url("Fonts/5579733/c75fddc5-e0fb-4494-87d8-fb1c2180a9da.ttf") format("truetype");
+// }
+// @font-face {
+//     font-family: "Brandon Grotesque W01 Bold";
+//     src: url("Fonts/5579756/af39107c-3b1e-488b-9b65-134f4e7617be.eot?#iefix");
+//     src: url("Fonts/5579756/af39107c-3b1e-488b-9b65-134f4e7617be.eot?#iefix") format("eot"), url("Fonts/5579756/d849a1c9-784e-4774-af52-86b6dc52cae6.woff2") format("woff2"), url("Fonts/5579756/6a0d5f5e-3ccd-4763-9f8b-e93735b722bc.woff") format("woff"), url("Fonts/5579756/95c8fa39-0995-42f1-b38d-e0aff06c6605.ttf") format("truetype");
+// }
+// @font-face {
+//     font-family: "Brandon Grotesque W01 Black";
+//     src: url("Fonts/5579764/8490e6a8-a82a-49a1-8b88-4d2796149009.eot?#iefix");
+//     src: url("Fonts/5579764/8490e6a8-a82a-49a1-8b88-4d2796149009.eot?#iefix") format("eot"), url("Fonts/5579764/ca0293d5-fe3a-478d-b3d8-7f5748b3a8df.woff2") format("woff2"), url("Fonts/5579764/851575f1-9507-4abe-902c-9a96cf9aaa84.woff") format("woff"), url("Fonts/5579764/70115c82-382c-454d-8482-851deb08bf4a.ttf") format("truetype");
+// }
+@font-face {
+    font-family: brandon-grotesque;
+    src: url("Fonts/reg/brandon-grotesque-regular.eot?#iefix");
+    src: url("Fonts/reg/brandon-grotesque-regular.eot?#iefix") format("eot"), url("Fonts/reg/brandon-grotesque-regular.woff2") format("woff2"), url("Fonts/reg/brandon-grotesque-regular.woff") format("woff"), url("Fonts/reg/brandon-grotesque-regular.ttf") format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: brandon-grotesque;
+    src: url("Fonts/bold/brandon-grotesque-bold.eot?#iefix");
+    src: url("Fonts/bold/brandon-grotesque-bold.eot?#iefix") format("eot"), url("Fonts/bold/brandon-grotesque-bold.woff2") format("woff2"), url("Fonts/bold/brandon-grotesque-bold.woff") format("woff"), url("Fonts/bold/brandon-grotesque-bold.ttf") format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}

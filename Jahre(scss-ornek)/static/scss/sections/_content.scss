@@ -1,0 +1,56 @@
+@use '../components/variable' as *;
+$columns: 100;
+.content {
+    padding: 50px 0;
+    @include media('xsmall') {
+        padding: 20px 0;
+    }
+    @include media('small') {
+        padding: 20px 0;
+    }
+    @for $i from 1 through $columns {
+        .pl-#{$i} {
+            padding-left: $i+px;
+            @include media('xsmall') {
+                padding-left: 0;
+            }
+            @include media('small') {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 28px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-family: $FontFamilyBold;
+    font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+strong {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size: 24px;
+    font-family: $FontFamilyBold;
+    color: #4D4D4D;
+    font-weight: 700;
+}
+
+p {
+    color: #4D4D4D;
+    font-size: 22px;
+    font-family: $FontFamilyRegular;
+    line-height: 28px;
+}

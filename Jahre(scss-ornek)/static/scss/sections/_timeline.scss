@@ -1,0 +1,131 @@
+@use '../components/variable' as *;
+.timeline {
+    display: block;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #707070;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 15px);
+        @include media('xsmall') {
+            content: '';
+        }
+        @include media('small') {
+            content: none;
+        }
+    }
+    &__container {
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        @include media('xsmall') {
+            width: 100%;
+        }
+        @include media('small') {
+            width: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: -15px;
+            background-color: #C7A17A;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            @include media('xsmall') {
+                right: 0;
+            }
+            @include media('small') {
+                right: 0;
+            }
+        }
+        &.left {
+            left: 0;
+            padding-right: 30px;
+            @include media('xsmall') {
+                padding-right: 0;
+            }
+            @include media('small') {
+                padding-right: 0;
+            }
+            .timeline__date {
+                text-align: right;
+                h2 {
+                    @include media('xsmall') {
+                        padding: 0 40px 20px 0;
+                    }
+                    @include media('small') {
+                        padding: 0 40px 20px 0;
+                    }
+                }
+            }
+        }
+        &.right {
+            left: 50%;
+            text-align: left;
+            padding-left: 30px;
+            @include media('xsmall') {
+                padding-left: 0;
+                left: 0;
+            }
+            @include media('small') {
+                padding-left: 0;
+                left: 0;
+            }
+            .timeline__date {
+                text-align: left;
+                h2 {
+                    @include media('xsmall') {
+                        padding: 0 0 20px 40px;
+                    }
+                    @include media('small') {
+                        padding: 0 0 20px 40px;
+                    }
+                }
+            }
+            &::after {
+                left: -15px;
+                right: auto;
+                @include media('xsmall') {
+                    left: 0;
+                }
+                @include media('small') {
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__content {
+        padding-top: 17px;
+    }
+    &__date {
+        h2 {
+            color: #C7A17A;
+            font-size: 22px;
+            margin: 0;
+            padding: 0 0 20px 0;
+            text-transform: uppercase;
+            font-family: $FontFamilyBold;
+        }
+    }
+    &__image {
+        width: 100%;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    &__text {
+        background: #F8F4F1;
+        padding: 30px;
+        p {
+            font-size: 20px;
+        }
+    }
+}

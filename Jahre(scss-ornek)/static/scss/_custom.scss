@@ -1,0 +1,11 @@
+@use 'components/variable' as *;
+@use 'components/reset';
+@use 'components/fonts';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $FontFamilyRegular;
+    font-style: normal;
+}
